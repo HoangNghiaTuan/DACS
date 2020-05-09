@@ -11,7 +11,6 @@
     $conn = mysqli_connect("localhost", "root", "","login");
     
 
-    // Check connection
     if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
     }
