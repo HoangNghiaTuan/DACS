@@ -1,0 +1,45 @@
+.header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+.body{
+  font-size: 16px;
+  color: #1ac5ff;
+}
+*{
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
+/* HEADER  */
+
+
+.l-header_overlay{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+}
+/* SREACH */
+input[type=text] {
+  
+  width: 150px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  font-size: 15px;
+  width: 100%;
+}
+
+.navbar{
+  position: fixed;
+  top: 0px; 
+  z-index: 10000;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, .9);
+  z-index: 100;
+  width: 100% ;
+}

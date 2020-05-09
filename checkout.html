@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đặt hàng</title>
+
+	<link rel="stylesheet" title="style" href="assets/dest/css/style.css">
+	<link rel="stylesheet" href="assets/dest/css/animate.css">
+	<link rel="stylesheet" title="style" href="assets/dest/css/huong-style.css">
+	  <!-- Bootstrap CSS -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<!-- Main CSS  -->
+	<link rel="stylesheet" href="./checkout.css">
+  
+</head>
+<body>
+  <div class="wrapper">
+    <header class="l-header ">
+      <div class="heading">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
+          <div class="navbar-brand">
+            <img src="./img/LOGODA.png" alt="logo" , style="width: 80px;height: 80px;">
+            <input type="text" name="search" placeholder="Search...">
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href=".">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="DanhMucSP.html">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="KhoiNguonCamHung.html">IDEA</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link" ><i class="fas fa-user-circle"></i>         
+                </a>
+              </li>
+            
+           
+			  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">
+          <i class="fa fa-shopping-cart"> </i>(<span class="total-count"></span>)</button>
+
+              <li class="scrollable-fix"></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+	</header>
+	
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Check out</li>
+			</ol>
+		  </nav>	
+	
+	<div class="container">
+		<div id="content">
+			
+			<form action="#" method="post" class="beta-form-checkout">
+				<div class="row">
+					<div class="col-sm-6">
+						<h4>Đặt hàng</h4>
+						<div class="space20">&nbsp;</div>
+
+						<div class="form-block">
+							<label for="name">Họ tên*</label>
+							<input type="text" id="name" placeholder="Họ tên" required>
+						</div>
+						<div class="form-block">
+							<label>Giới tính </label>
+							<input id="gender" type="radio" class="input-radio" name="gender" value="nam" checked="checked" style="width: 10%"><span style="margin-right: 10%">Nam</span>
+							<input id="gender" type="radio" class="input-radio" name="gender" value="nữ" style="width: 10%"><span>Nữ</span>
+										
+						</div>
+
+						<div class="form-block">
+							<label for="email">Email*</label>
+							<input type="email" id="email" required placeholder="expample@gmail.com">
+						</div>
+
+						<div class="form-block">
+							<label for="adress">Địa chỉ*</label>
+							<input type="text" id="adress" placeholder="Street Address" required>
+						</div>
+						
+
+						<div class="form-block">
+							<label for="phone">Điện thoại*</label>
+							<input type="text" id="phone" required>
+						</div>
+						
+						<div class="form-block">
+							<label for="notes">Ghi chú</label>
+							<textarea id="notes"></textarea>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="your-order">
+							<div class="your-order-head"><h5>Đơn hàng của bạn</h5></div>
+							<div class="your-order-body" style="padding: 0px 10px">
+								<div class="your-order-item">
+									<div>
+									<!--  one item	 -->
+									
+									<!-- end one item -->
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="your-order-item">
+									<div class="pull-left"><p class="your-order-f18">Tổng tiền:</p></div>
+									
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="your-order-head"><h5>Hình thức thanh toán</h5></div>
+							
+							<div class="your-order-body">
+								<ul class="payment_methods methods">
+									<li class="payment_method_bacs">
+										<input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method" value="COD" checked="checked" data-order_button_text="">
+										<label for="payment_method_bacs">Thanh toán khi nhận hàng </label>
+										<div class="payment_box payment_method_bacs" style="display: block;">
+											Cửa hàng sẽ gửi hàng đến địa chỉ của bạn, bạn xem hàng rồi thanh toán tiền cho nhân viên giao hàng
+										</div>						
+									</li>
+
+									<li class="payment_method_cheque">
+										<input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method" value="ATM" data-order_button_text="">
+										<label for="payment_method_cheque">Chuyển khoản </label>
+										<div class="payment_box payment_method_cheque" style="display: none;">
+											Chuyển tiền đến tài khoản sau:
+											<br>- Số tài khoản: 123 456 789
+											<br>- Chủ TK: Nguyễn A
+											<br>- Ngân hàng ACB, Chi nhánh TPHCM
+										</div>						
+									</li>
+									
+								</ul>
+							</div>
+
+							<div class="text-center"><a class="beta-btn primary" href="#">Đặt hàng <i class="fa fa-chevron-right"></i></a></div>
+						</div> <!-- .your-order -->
+					</div>
+				</div>
+			</form>
+		</div> <!-- #content -->
+	</div> <!-- .container -->
+
+
+	<footer>
+		<div class="footer-background ">
+		  <div class=" container footer-about">
+			
+			  <div class="row">
+				<div class="about-dk col-md-12">
+				  <p>Đăng kí nhận bản tin khuyến mãi <br> Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn.</br>
+				  </p>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-md-6">
+				  <input type="text" class="form-control" placeholder="Mời nhập email" style="width: 100%;">
+				</div>
+				<div class="col-md-6 ">
+				  <div class="div ">
+					<button class="btn btn-outline-dark">Submit</button>
+				  </div>
+				 
+				</div>
+			  </div>
+		   
+		  </div>
+		</div>
+  
+		<div class="container bottom-about">
+		  <div class="row">
+			<div class="col">
+			  <h5>LIÊN HỆ VỚI HNM</h5>
+			  <P><B>Hotline CSKH</B>: 19000091 <br> 1.000/phút, 8h30-12h00 và 13h30-17h00 <br> từ Thứ Hai tới Chủ Nhật (trừ các
+				Ngày Lễ) <br> <b>Email</b> <a href="#">hoangngocminh@gmail.com</a></P>
+			</div>
+			<div class="col">
+			  <h5>VỀ CHÚNG TÔI</h5>
+			  <ul>
+				<li>Giới thiệu</li>
+				<li>Chính sách bảo mật thanh toán</li>
+				<li>Chính sách bảo mật thông tin cá nhân</li>
+				<li>Bán hàng cùng HNM</li>
+			  </ul>
+			</div>
+			<div class="col">
+			  <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+			  <ul>
+				<li>Hướng dẫn đặt hàng</li>
+				<li>Quy trình giao hàng và thanh toán</li>
+				<li>Quy trình đổi trả và bảo hành</li>
+				<li>Chính sách giải quyết khiếu nại</li>
+			  </ul>
+			</div>
+			<div class="col">
+			  <h5>KẾT NỐI VỚI CHÚNG TÔI</h5>
+			  <img src="./img/facebok-at-3x-1571815923.png" alt="" style="width: 40px;height: 40px;">
+			  <img src="./img/instagram-at-3x-1571815927.png" alt="" style="width: 40px;height: 40px;">
+			  <img src="./img/LOGODA.png" alt="" style="width: 40px;height: 40px;" >
+			  
+			  <div class="footer"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
+			</div>
+		  </div>
+		</div>
+  
+		<div class="footer-coppyright">
+		  <div class="icon-coppyright d-flex justify-content-center">
+			<span><i class="fa fa-copyright"></i></span>
+			<span> 2020 Coppyright: <a href="#">hoangngocminh.com</a></span>
+		  </div>
+		  <!--<div class="move-up">
+			<span><i class="fas fa-arrow-alt-circle-up"></i></span>
+		  </div>--> 
+		</div>
+	  </footer>
+	
+
+	<!-- include js files -->
+	<script src="assets/dest/js/jquery.js"></script>
+	<script src="assets/dest/vendors/jqueryui/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="assets/dest/vendors/bxslider/jquery.bxslider.min.js"></script>
+	<script src="assets/dest/vendors/colorbox/jquery.colorbox-min.js"></script>
+	<script src="assets/dest/vendors/animo/Animo.js"></script>
+	<script src="assets/dest/vendors/dug/dug.js"></script>
+	<script src="assets/dest/js/scripts.min.js"></script>
+	<!--customjs-->
+	<script type="text/javascript">
+    $(function() {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+
+        // passes on every "a" tag
+        $(".main-menu a").each(function() {
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).closest("li").addClass("active");
+				$(this).parents('li').addClass('parent-active');
+            }
+        });
+    });   
+
+
+</script>
+</body>
+</html>

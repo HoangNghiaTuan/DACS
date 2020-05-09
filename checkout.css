@@ -1,0 +1,68 @@
+body{
+    font-size: 15px;
+}
+.footer-background{
+    background-image: url(./img/banner-bg-1.jpg);
+    padding: 50px 0;
+  }
+  .l-header_overlay{
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+  }
+  /* SREACH */
+  input[type=text] {
+    
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    font-size: 15px;
+    width: 100%;
+  }
+  .icon-bar .row a {
+    width: max-content; 
+    background-color: white; 
+    overflow: auto; 
+    
+  }
+  .icon-bar .row a img{
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icon-bar .row a {
+    float: left;
+    text-align: center; 
+    width: max-content; 
+    padding: 20.2px; 
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 5px; 
+  }
+  
+  .icon-bar .row a:hover {
+    background-color: white;
+    box-shadow: 2px 2px 4px gray 
+  }
+  .breadcrumb{        
+    padding: 1px;
+    margin: 1px;
+  }
+  .breadcrumb
+{
+  background-color:#fff;
+  color: black;
+  height: 30px;
+}
+.breadcrumb li a{
+  color: black;
+}
+.breadcrumb li a:hover{
+  color:#1ac5ff;
+}
+  

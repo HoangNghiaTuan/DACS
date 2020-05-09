@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="for.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" >
+    <style>
+        #msg
+        {
+            visibility: hidden;
+            min-width: 500px;
+            background-color: yellow;
+            color: #000;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            right: 30%;
+            top: 30px;
+            font-size: 17px;
+          
+        }
+        #msg.show
+        {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s,fadeout 0.5s 2.5s;
+        }
+        @-webkit-keyframes fadein
+        {
+            from{top:0 ; opacity: 0;}
+            to{top:30px ; opacity: 1;}
+        }
+        @keyframes fadein
+        {
+            from{top:0 ; opacity: 0;}
+            to{top:30px ; opacity: 1;}
+        }
+        @-webkit-keyframes fadeout
+        {
+            from{top:0 ; opacity: 0;}
+            to{top:30px ; opacity: 1;}
+        }
+        @keyframes fadeout
+        {
+            from{top:0 ; opacity: 0;}
+            to{top:30px ; opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="forget">
+        <from>
+            <h1 align="center" style="color:#69f5e9">Forget PassWord</h1><br>
+            <h3 style="font-size: 14px; color: yellow;">Enter email here that you used on your account. We send link on your email to seset your password.</h3>
+   
+            <input type="text" name="User Name" placeholder="Enter your email"> <br>
+            <br><br>
+            <input type="button" value="Send" onclick="myFunction()"><br><br><br><br><br>
+            <a href="login.html" style="text-decoration:none;">Go back to Home page</a><br> <br>
+            <div id="msg">Congratulations you Sign up successfully!!!</div>
+            <script>
+                function myFunction()
+                {
+                    var x = document.getElementById("msg");
+                    x.className="show";
+                    setTimeout(function(){x.className=x.className.replace("show",""); }, 3000);
+                }
+            </script>
+        </from>
+        
+    </div>
+</body>
+</html>

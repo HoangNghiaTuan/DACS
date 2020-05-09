@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Main CSS  -->
+    <!-- Main CSS  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Danhmucsp.css">
+    <title>Danh Mục Sản Phẩm</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="l-header l-header_overlay">
+      <div class="heading">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
+          <div class="navbar-brand">
+            <img src="./img/LOGODA.png" alt="logo" , style="width: 80px;height: 80px;">
+            <input type="text" name="search" placeholder="Search...">
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href=".">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="DanhMucSP.html">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="KhoiNguonCamHung.html">IDEA</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link" ><i class="fas fa-user-circle"></i>
+                  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-heart"></i>
+                </a>
+              </li>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"> </i>(<span class="total-count"></span>)</button>
+
+              <li class="scrollable-fix"></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+      
+    
+      <!------------------Bảng danh mục sản phảm------------------------------------>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Product</li>
+        </ol>
+      </nav>
+
+     <div class="sidebar"> 
+      <li class="tieudedanhmuc">DANH MỤC SẢN PHẨM</li>
+         <div class="row">  
+           <ul>
+            <nav class="mainNav"> 
+                <ul>     
+                    <li class="selected"><a href="#" title="GIƯỜNG">GIƯỜNG</a> 
+                        <ul> 
+                            <li><a href="#" title="GIƯỜNG">Giường tầng</a></li> 
+                            <li><a href="#" title="GIƯỜNG">Giường học kéo</a></li> 
+                            <li><a href="#" title="GIƯỜNG">Giường đôi</a></li> 
+                            <li><a href="#" title="GIƯỜNG">Giường đơn</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="#" title="TỦ">TỦ</a> 
+                      <ul> 
+                          <li><a href="#" title="TỦ">Tủ Trang Trí</a></li> 
+                          <li><a href="#" title="TỦ">Tủ Ngăn Kéo</a></li> 
+                          <li><a href="#" title="TỦ">Tủ Quần Áo</a></li> 
+                          <li><a href="#" title="TỦ">Tủ Giày</a></li> 
+                          <li><a href="#" title="TỦ">Tủ Bếp</a></li> 
+                          <li><a href="#" title="TỦ">Tủ Đầu Giường</a></li>  
+                      </ul> 
+                  </li>
+                    <li><a href="#" title="SOFA ĐƠN">SOFA ĐƠN</a> 
+                        <ul> 
+                            <li><a href="#" title="SOFA ĐƠN">Ghế đôn/Ghế lười</a></li> 
+                            <li><a href="#" title="SOFA ĐƠN">Ghế băng</a></li> 
+                            <li><a href="#" title="SOFA ĐƠN">Ghế đọc sách</a></li> 
+                            <li><a href="#" title="SOFA ĐƠN">Ghế bành</a></li>
+                        </ul> 
+                    </li> 
+                    <li><a href="#" title="KỆ ĐỠ">KỆ ĐỠ</a> 
+                        <ul> 
+                            <li><a href="#" title="KỆ ĐỠ">Kệ treo tường</a>
+                            </li> 
+                            <li><a href="#" title="KỆ ĐỠ">Kệ sách </a>
+                            </li> 
+                            <li><a href="#" title="KỆ ĐỠ">Kệ tivi</a>
+                            </li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="#" title="BÀN CAFE">BÀN CAFE</a> 
+                        <ul> 
+                            <li><a href="#" title="BÀN CAFE">Bàn trang trí</a></li> 
+                            <li><a href="#" title="BÀN CAFE">Bàn góc</a></li> 
+                            <li><a href="#" title="BÀN CAFE">Bàn cafe</a></li> 
+                        </ul> 
+                    </li>
+                        <li><a href="#" title="GHẾ">GHẾ</a> 
+                            <ul> 
+                                <li><a href="#" title="GHẾ">Ghế làm việc</a></li> 
+                                <li><a href="#" title="GHẾ">Ghế thư giản</a></li> 
+                                <li><a href="#" title="GHẾ">Ghế Bar</a></li> 
+                                <li><a href="#" title="GHẾ">Ghế ăn</a></li>
+                            </ul> 
+                        </li>
+                    <li><a href="#" title="BÀN">BÀN </a> 
+                        <ul> 
+                            <li><a href="#" title="BÀN">Bàn làm việc</a></li> 
+                            <li><a href="#" title="BÀN">Bàn ăn</a></li> 
+                            <li><a href="#" title="BÀN">Bàn Bar</a></li> 
+                            <li><a href="#" title="BÀN">Bàn trang điểm</a></li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="#" title="PHỤ KIỆN">PHỤ KIỆN</a> 
+                        <ul> 
+                            <li><a href="#" title="PHỤ KIỆN">Gối</a></li> 
+                            <li><a href="#" title="PHỤ KIỆN">Nệm</a></li> 
+                            <li><a href="#" title="PHỤ KIỆN">Khăn</a></li> 
+                            <li><a href="#" title="PHỤ KIỆN">Thảm</a></li> 
+                            <li><a href="#" title="PHỤ KIỆN">Thùng gác</a></li> 
+                            <li><a href="#" title="PHỤ KIỆN">Gương</a></li> 
+                            <li><a href="#" title="PHỤ KIỆN">Giỏ</a></li> 
+                            <li><a href="#" title="PHỤ KIỆN">Đồ gia dụng</a></li> 
+                        </ul> 
+                    </li>
+                    <li><a href="#" title="BỘ SẢN PHẨM">BỘ SẢN PHẨM</a> 
+                      <ul> 
+                      </ul> 
+                    </li>
+                </ul>
+                </nav> 
+            </div> 
+          </ul>
+          <!----------------------------BẢNG BỘ LỌC--------------------------------------------->
+      <li class="tieudedanhmuc">BỘ LỌC</li>
+      <form action="Danhmucsp.html" method="GET" name="filters_product"
+            id="filters_product">
+          <div class="menu-block menu">
+            <button class="header-button" type="button" data-toggle="collapse" data-target="#brand-filter-panel">
+                  <a class="filter-header">
+                  Thương hiệu 
+                  </a>
+              </button>
+      <div class="has-more brand">
+      <ul class="filter-content collapse show" id="brand-filter-panel">
+       <li class="search-filter">
+       <button type="submit"><i class="fa fa-search" aria-hidden="true" alt="Tìm kiếm"></i></button>
+       <input id="brand_search_input" placeholder="Tìm kiếm..." class="search-input">
+      </li>
+      <li class="filter-brand" data-brand-name="aconcept">
+  <div class="label-wrapper checkbox">
+      <label title="">
+          <input type="checkbox" value="aconcept_44">
+          <a class="title link">Aconcept</a>
+          <span class="checkmark" ></span>
+      </label>
+  </div>
+      </li>
+      <li class="filter-brand" data-brand-name="astro">
+  <div class="label-wrapper checkbox">
+      <label title="">
+          <input type="checkbox" value="astro_31">
+          <a class="title link">astro</a>
+          <span class="checkmark" ></span>
+      </label>
+  </div>
+      </li>
+      <li class="filter-brand" data-brand-name="beyours">
+  <div class="label-wrapper checkbox">
+      <label title="">
+          <input type="checkbox" value="beyours_49">
+          <a class="title link">Beyours</a>
+          <span class="checkmark" ></span>
+      </label>
+  </div>
+      </li>
+      <li class="filter-brand" data-brand-name="casanha">
+  <div class="label-wrapper checkbox">
+      <label title="">
+          <input type="checkbox" value="casanha_11">
+          <a class="title link">Casanha</a>
+          <span class="checkmark" ></span>
+      </label>
+  </div>
+      </li>
+      <li class="filter-brand" data-brand-name="cozino">
+  <div class="label-wrapper checkbox">
+      <label title="">
+          <input type="checkbox" value="cozino_16">
+          <a class="title link">Cozino</a>
+          <span class="checkmark" ></span>
+      </label>
+  </div>
+      </li>
+      <li class="filter-brand" data-brand-name="decem">
+  <div class="label-wrapper checkbox">
+      <label title="">
+          <input type="checkbox" value="decem_28">
+          <a class="title link">Decem</a>
+          <span class="checkmark"></span>
+      </label>
+  </div>
+      </li>
+      <li class="filter-brand" data-brand-name="decox">
+  <div class="label-wrapper checkbox">
+      <label title="">
+          <input type="checkbox" value="decox_22">
+          <a class="title link">Decox</a>
+          <span class="checkmark"></span>
+      </label>
+  </div>
+      </li>
+      </ul>
+      </div>
+    </div>
+<!--------------------------BẢNG PHONG CÁCH--------------------------------->
+    <div class="menu-block menu">
+      <button class="header-button" type="button" data-toggle="collapse" data-target="#style-filter-panel">
+      <a class="filter-header">
+      Phong cách
+      
+      </a>
+      </button>
+        <div class="has-more style">
+          <ul class="filter-content collapse show" id="style-filter-panel">
+                  
+                  <li class="filter-style">
+          <div class="label-wrapper checkbox">
+              <label title="">
+                  <input type="checkbox" value="phong-cach-urban_12" >
+                  <a class="title link">Phong  cách Urban</a>
+                  <span class="checkmark" ></span>
+              </label>
+          </div>
+      </li>
+                  <li class="filter-style">
+          <div class="label-wrapper checkbox">
+              <label title="">
+                  <input type="checkbox" value="phong-cach-art-craft_9" >
+                  <a class="title link">Phong cách Art &amp; Craft</a>
+                  <span class="checkmark" ></span>
+              </label>
+          </div>
+      </li>
+                  <li class="filter-style">
+          <div class="label-wrapper checkbox">
+              <label title="">
+                  <input type="checkbox" value="phong-cach-brutalism_7" >
+                  <a class="title link">Phong cách Brutalism</a>
+                  <span class="checkmark" ></span>
+              </label>
+          </div>
+      </li>
+                  <li class="filter-style">
+          <div class="label-wrapper checkbox">
+              <label title="">
+                  <input type="checkbox" value="phong-cach-co-dien_4" >
+                  <a class="title link">Phong cách cổ điển</a>
+                  <span class="checkmark" ></span>
+              </label>
+          </div>
+      </li>
+                  <li class="filter-style">
+          <div class="label-wrapper checkbox">
+              <label title="">
+                  <input type="checkbox" value="phong-cach-color-block_8" >
+                  <a class="title link">Phong cách Color Block</a>
+                  <span class="checkmark" ></span>
+              </label>
+          </div>
+      </li>
+                  <li class="filter-style">
+          <div class="label-wrapper checkbox">
+              <label title="">
+                  <input type="checkbox" value="phong-cach-hien-dai_2" >
+                  <a class="title link">Phong cách hiện đại</a>
+                  <span class="checkmark" ></span>
+              </label>
+          </div>
+      </li>
+          </ul>
+        </div>
+    </div>
+<!--------------------BẢNG ÁP DỤNG GIÁ TỪ 0-----ĐẾN----70000000------------------------------>
+  <div class="filter-block menu">
+    <button class="header-button" type="button" data-toggle="collapse" data-target="#price-filter-panel">
+  <a class="filter-header">
+      Giá (VND)
+      <img src="/images/icon/down.png" alt="" class="icon">
+  </a>
+    </button>
+    <ul class="filter-content collapse show" id="price-filter-panel">
+  <li>
+      <div class="collapse-item price">
+          <div class="control-price">
+              <input value="0" class="min price-input">
+              <span></span>
+              <input value="70000000" class="max price-input">
+          </div>
+          <button class="btn btn-primary filter-price-btn" type="button" style="margin-top: 15px;">ÁP DỤNG</button>
+      </div>
+  </li>
+    </ul>
+  </div>
+<!----------------------BẢNG MÀU SẮC  ------------------------------------->
+  
+    <div class="menu-block menu">
+      <button class="header-button" type="button" data-toggle="collapse" data-target="#color-filter-panel">
+        <a class="filter-header">
+          Màu sắc
+        <img src="/images/icon/down.png" alt="" class="icon">
+        </a>
+      </button>
+    <h5 class="colors"> <span class="color blue"></span> <span class="color indigo"></span> <span class="color purple"></span><span class="color pink"></span> <span class="color red"></span> <span class="color orange"></span> 
+    </h5>
+    <h5 class="colors"> <span class="color yellow"></span> <span class="color orange"></span> <span class="color teal"></span><span class="color cyan"></span> <span class="color white"></span> <span class="color gray"></span> 
+    </h5>
+    <h5 class="colors"> <span class="color gray-dark"></span> <span class="color primary"></span> <span class="color secondary"></span><span class="color success"></span> <span class="color info"></span> <span class="color warning"></span> 
+    </h5>
+    <h5 class="colors"> <span class="color danger"></span> <span class="color light"></span> <span class="color dark"></span> 
+    </h5>
+      <ul class="filter-content collapse show" id="color-filter-panel">
+          <li class="filter-color-wrapper">
+              <div class="row">
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="mau-cam_12" style="background: #F47D0E;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="hoa-tiet_32" style="background: #F8F3F3;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="hong-1_28" style="background: #F03376;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="hong_7" style="background: #FFAACF;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="kem_19" style="background: #FFEACC;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="mau-be_21" style="background: #FFDB9C;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="mau-go_15" style="background: #C39122;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="mau-hong-cam_25" style="background: #C34433;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="mau-soi_10" style="background: #ffd980;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="mau-dong_31" style="background: #9E6605;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="nau_4" style="background: #967c62;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="tim_9" style="background: #8d74d9;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color white-color "
+                  data-color-id="trang_5" style="background: #ffffff;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="trang-bac_27" style="background: #E2DCDC;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="vang_14" style="background: #FFF600;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="vang-hong_30" style="background: #FF6666;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xam-1_22" style="background: #837979;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xam_2" style="background: #BDB9B9;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xam-dam_16" style="background: #4F4D4D;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-co-vit_23" style="background: #2A96A7;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-da-troi_29" style="background: #9AE1FF;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-duong_6" style="background: #4592ff;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-la_8" style="background: #3dc47e;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-la-bac_26" style="background: #98D4A6;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-navy_24" style="background: #1338AC;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-reu_18" style="background: #4B6E31;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="xanh-den_17" style="background: #050652;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="den_1" style="background: #282f36;"></div>
+          </div>
+                          <div class="col-lg-2 col-md-3">
+              <div class="filter-color  "
+                  data-color-id="do_3" style="background: #ff4f52;"></div>
+          </div>
+              </div>
+          </li>
+      </ul>
+    </div>
+  
+<!-------------------------BẢNG CHẤT LIỆU ---------------------------------->
+    <div class="menu-block menu">
+      <button class="header-button" type="button" data-toggle="collapse" data-target="#material-filter-panel">
+        <a class="filter-header">
+          Chất liệu
+          <img src="/images/icon/down.png" alt="" class="icon">
+        </a>
+      </button>
+      <ul class="filter-content collapse show" id="material-filter-panel">
+          <li class="filter-material-wrapper">
+      <div class="row">
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="be-tong_17">Bê tông</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="coi_24">Cói</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="cotton_18">Cotton</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="da-1_13">Da công nghiệp</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="da-pu_6">Da PU</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="da-tu-nhien_12">Da thật</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="giay_26">Giấy</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="go_3">Gỗ công nghiệp</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="go-1_9">Gỗ tự nhiên</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="gom-su_20">Gốm sứ</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="inox_8">Kim loại</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="kinh_7">Kính</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="len_14">Len</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="luc-binh_19">Lục bình</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="may-tre_22">Mây tre</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="nhua_10">Nhựa</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="polypropylene_15">Polypropylene</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="thach-cao_25">Thạch cao</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="vai-1_16">Vải</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="vai_2">Vải bố Linen</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="vai-nhung_11">Vải nhung</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="vai-polyester_5">Vải Polyester</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="vo-cay_21">Vỏ cây</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="xo-dua_23">Xơ dừa</div>
+          </div>
+                          <div class="filter-material-wp">
+              <div class="filter-material "
+                      data-material-id="da_4">Đá</div>
+          </div>
+                      </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <!----------------------MAIN------------------------------->
+  <div class="main">
+    <!----------------------MAIN TẤT CẢ SẢN PHẨM------------------------------->
+    <div class="tieudemain">Sản Phẩm Bán Chạy</div>
+    
+<!---------------------------CAROUSEL SẢN PHẨM-------------------------------->
+  <!-- product 2  -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="0">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel1" data-slide-to="1"></li>
+              <li data-target="#myCarousel1" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/4e25cf8f06de8eb07fffb8c4dde68f02-1579163215.jpg" class=" img-responsive img-fluid" alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 01</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><b>10.00</b></p>
+                        <button type="button" class="add-cart cart9">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/5-1577681343.JPG" class="img-responsive img-fluid" alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 02</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><b>10.00</b></p>
+                        <button type="button" class="add-cart cart10">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/9a55e8debd24187342c5404899b220e0-1579148354.jpg"
+                          class="img-responsive img-fluid" alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 03</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><b>10.00</b></p>
+                        <button type="button" class="add-cart cart11">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/arboard16a-1580800553.jpg"
+                          class="img-responsive img-fluid" alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 04</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><b>10.00</b></p>
+                        <button type="button" class="add-cart cart12">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item carousel-item">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/arboard7-1582513850.jpg" class="img-responsive img-fluid" alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 05</h4>                       
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><span>10.00</span></p>
+                        <button type="button" class="add-cart cart13">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/arboard9-1580962175-1581590871.jpg"
+                          class="img-responsive img-fluid" alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 06</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><span>10.00</span></p>
+                        <button type="button" class="add-cart cart14">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/tu-chen-nho-3ngan-cozino-holy-1582519337.jpg" class="img-responsive img-fluid" alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 07</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><span>10.00</span></p>
+                        <button type="button" class="add-cart cart15">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="thumb-wrapper">
+                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                      <a href="chitietsp.html">
+                      <div class="img-box">
+                        <img src="./img/img-sppb/mnu-utf-kila-mixed-ki03080016404-1-1577790988.jpg" class="img-responsive img-fluid"
+                          alt="">
+                      </div>
+                      <div class="thumb-content">
+                        <h4>SẢN PHẨM 08</h4>
+                        <div class="star-rating">
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                          </ul>
+                        </div>
+                        <p class="item-price"><span>10.00</span></p>
+                        <button type="button" class="add-cart cart16">Add to Cart</button>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control left carousel-control-prev" href="#myCarousel1" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control right carousel-control-next" href="#myCarousel1" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="tieudemain">Tất Cả Sản Phẩm</div>
+      <div class="sp_main">
+            <ul>
+              <li><a href="">
+                <img src="img/img-bsp/bundle-01-1-up-1579234586.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart1">Add to Cart</button>
+              </a></li>
+              
+              <li><a href="">
+                <img src="img/img-bsp/bundle-02-2-up-1579232369.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart2">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-bsp/bundle-02-3-up-1579172217.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart3">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-bsp/bundle-03-1-up-1579163685.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart4">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-bsp/bundle-03-2-up-1579233696.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart5">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-bsp/bundle-03-3-up-1579169943.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart6">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-bsp/bundle-04-1-up-1579164176.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart 7">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-bsp/bundle-04-2-up-1579236499.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban--trangdiem-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban--trangdiemdongnhan-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban-an-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban-an-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban-bar-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban-bar-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban-lam-viec-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/BAN-ban-lam-viec-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ban-cafe-1.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ban-cafe-2.png" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+              
+              <li><a href="">
+                <img src="img/img-allsp/ban-goc-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ban-goc-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ban-trang-tri-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ban-trang-tri-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-an-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-an-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-bar-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-bar-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-lamviec-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-lamviec-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-thugian-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ghe-thugian-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/giuong-doi-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/giuong-doi-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/giuong-don-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/giuong-don-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/giuong-ngan-keo-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/giuong-ngan-keo-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/giuong-tang-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ke-sach-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ke-sach-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ke-tivi-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ke-tivi-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ke-treo-tuong-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/ke-treo-tuong-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-do-gia-dung-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-gio-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-goi-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-guong-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-khan-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-nem-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-tham-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/pk-thung-rac-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/SOFA-don-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/SOFA-don-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/sofa-ghe-bang-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/sofa-ghe-bang-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/sofa-ghe-doc-sach-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/sofa-ghe-doc-sach-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/sofa-ghe-luoi-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/sofa-ghe-luoi-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-bep-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-bep-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-dau-giuong-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-dau-giuong-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-giay-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-giay-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-ngan-keo-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-ngan-keo-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-quan-ao-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-quan-ao-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-trangtri-1.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+
+              <li><a href="">
+                <img src="img/img-allsp/tu-trangtri-2.jpg" width="100%">
+                <p class="tieudesp">#########</p>
+                <hr align="center" width="100%" style="border: 1px solid gray;">
+                <p class="giasp">100.000</p>
+                <p class="giakhuyenmai">98.000</p>
+                <button tyle="button" class="add-cart cart8">Add to Cart</button>
+              </a></li>
+              
+              
+              
+            </ul>
+      </div>
+  </div>
+  
+<!----------------------HẾT MAIN ------------------------------------->
+    <footer>
+       <!----------------------------phân trang tất cả sản phẩm------------->
+     <!---------phân trang BOOTRAP------->
+       <div class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>  
+    </div>
+    <!----------hết phân trang BOOTRAP----------------------->
+    <script src="/paginationjs-master/src/pagination.js"></script>
+    <script>
+    $('#demo').pagination({
+      dataSource: function(done) {
+    $.ajax({
+        type: 'GET',
+        url: '/DanhMucSP.html',
+        success: function(response) {
+            done(response);
+        }
+    });
+    },
+      locator: 'items',
+      totalNumberLocator: function(response) {
+        // you can return totalNumber by analyzing response content
+        return Math.floor(Math.random() * (1000 - 100)) + 100;
+    },
+      pageSize: 20,
+      ajax: {
+          beforeSend: function() {
+              dataContainer.html('Loading data from DanhMucSP ...');
+          }
+      },
+      callback: function(data, pagination) {
+          // template method of yourself
+          var html = template(data);
+          dataContainer.html(html);
+      }
+  })
+  </script>
+      <!----------------------------HẾT phân trang tất cả sản phẩm------------->
+    <div class="footer-background ">
+        <div class=" container footer-about">
+            <div class="row">
+                <div class="about-dk col-md-12">
+                    <p>Đăng kí nhận bản tin khuyến mãi <br> Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn.</br></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Mời nhập email" style="width: 100%;">
+                </div>
+                <div class="col-md-6 ">
+                    <div class="div ">
+                        <button class="btn btn-outline-dark">Submit</button>
+                    </div>
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="container bottom-about">
+          <div class="row">
+            <div class="col">
+              <h5>LIÊN HỆ VỚI HNM</h5>
+              <P><B>Hotline CSKH</B>: 19000091 <br> 1.000/phút, 8h30-12h00 và 13h30-17h00 <br> từ Thứ Hai tới Chủ Nhật (trừ các
+                Ngày Lễ) <br> <b>Email</b> <a href="#">hoangngocminh@gmail.com</a></P>
+            </div>
+            <div class="col">
+              <h5>VỀ CHÚNG TÔI</h5>
+              <ul>
+                <li>Giới thiệu</li>
+                <li>Chính sách bảo mật thanh toán</li>
+                <li>Chính sách bảo mật thông tin cá nhân</li>
+                <li>Bán hàng cùng HNM</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+              <ul>
+                <li>Hướng dẫn đặt hàng</li>
+                <li>Quy trình giao hàng và thanh toán</li>
+                <li>Quy trình đổi trả và bảo hành</li>
+                <li>Chính sách giải quyết khiếu nại</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5>KẾT NỐI VỚI CHÚNG TÔI</h5>
+              <img src="./img/facebok-at-3x-1571815923.png" alt="" style="width: 40px;height: 40px;">
+              <img src="./img/instagram-at-3x-1571815927.png" alt="" style="width: 40px;height: 40px;">
+              <img src="./img/LOGODA.png" alt="" style="width: 40px;height: 40px;" >
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-coppyright">
+          <div class="icon-coppyright d-flex justify-content-center">
+            <span><i class="fa fa-copyright"></i></span>
+            <span> 2020 Coppyright: <a href="#">hoangngocminh.com</a></span>
+  
+          </div>
+        </div>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src=main.js></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    
+</body>
+</html>

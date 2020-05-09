@@ -1,0 +1,205 @@
+.menu{
+    
+    background: aquamarine;
+    margin:20px 5px 0 0;
+}
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.menu ul li{   
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    width: 23%;
+}
+p.tieudemenu{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 130px;
+    bottom: 0;
+    color: white;
+    background:gray;
+}
+.menu ul li a{
+    text-decoration: none;
+ } 
+
+ .sidebar{
+     width: 65%;
+     float: left;
+     margin: 25px 25px;
+ }
+ .sidebar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+.tieudesidebar{
+    font-size: 25px;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+.tieudesidebar i{
+    font-size: 35px;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+.m-3 img{
+    width: 500px;
+    height: 500px;
+}
+.mt3{
+    left: 0px;
+    bottom: 0px;
+}
+.mr-3{
+    width: 220px;
+    height: 220px;
+}
+
+.main{
+  width: 28%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.main ul{
+    margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main ul li{   
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.main ul li a{
+    text-decoration: none;
+ } 
+p.tieudelookbook{
+    font-size: 25px;
+    font-weight: bold;
+}
+p.Chudelookbook{
+    font-size: 20px;
+    font-weight: bold;
+}
+p.tieudetuvan{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    top: 0;
+    color: white;
+}
+p.chudetuvan{
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    background: gray;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* INFO  */
+  .container .text {
+  margin: 50px 0;
+  }
+  .container p {
+  color: #7e7e7e;
+  }
+  .text h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  }
+  
+  
+  
+    /* SREACH */
+    input[type=text] {
+      width: 130px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    
+    /* When the input field gets focus, change its width to 100% */
+    input[type=text]:focus {
+      width: auto;
+    }
+    
+    
+   
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    /* FOOTER */
+    .footer-background{
+      background-image: url(./img/banner-bg-1.jpg);
+      padding: 50px 0;
+      clear :left;
+    }
+    
+    .bottom-about .row{
+      margin: 30px 0;
+      
+    }
+    
+    .bottom-about .row {
+      color: black;
+    }
+.date-time span{
+    border-left: 1px solid #000000;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Chude{
+    font-weight: bold;
+}
+
+.p{
+    text-align: justify;
+    font-size: 13pt;
+    font-family: 'Times New Roman';
+}
+.span{
+    color: rgb(51, 51,51);
+    background-color: rgb(255,255,255);
+}
+.img{
+    text-align: center;
+}
+.ol li{
+    list-style-type: decimal;
+    font-style: normal; 
+    text-align: justify;
+    font-size: 13pt;
+    font-family:'Times New Roman';
+    color: rgb(0, 0, 0);
+}
+.ul li{
+    list-style-type: disc;
+    font-style: normal; 
+    text-align: justify;
+    font-size: 13pt;
+    font-family:'Times New Roman';
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,23 @@
+header{
+    background: rgb(4, 4, 110);
+    
+}
+.admin{
+    display: flex;
+    height: calc(100%-66px);
+}
+
+.admin .sidebar{
+    flex: 2;
+    height: 100%;
+    background-color: darkcyan;
+    border: 1px solid red;
+}
+.admin .content{
+    flex: 8;
+    height: 100%;
+    border: 1px solid green;
+}
+ .sidebar ul{
+    list-style: none;;
+ }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login_one.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<body>
+    <div class="signin">
+        <form action="Connect.php" method="post">
+            <h1 style="color:#000;text-align: center;">Đăng Nhập</h1>
+            <p><input type="username" name="username" id="username" placeholder="username" /></p>
+            <p><input type="password" name="password" id="password" placeholder="password" /> </p>
+
+            <p><input type="submit" value="Đăng Nhập" class="button"></p>
+            <div id="content">
+                <a href="re.html" style="margin-right: 0px; font-size: 13px; font-family:Arial,
+                Helvetica, sans-serif;">Đặt lại Mật Khẩu?</a>
+                <a href="for.html" style="margin-right: 0px; font-size: 13px; font-family:Arial,
+                Helvetica, sans-serif;">Quên mật khẩu</a>
+            </div><br><br><br><br><br><br><br><br>
+            <a href="">Bạn chưa có tài khoản?</a> <a href="sgnup.html">&nbsp;Đăng Nhập</a>
+        </form>
+    </div>
+
+    <script>
+        //Tạo Đăng Nhập
+        /*var CORRECT_USER = 'ad'; //Tài khoản 
+        var CORRECT_PASS = '123';//Mật khẩu*/
+
+        var inputUsername = document.getElementById('username'); //lấy thông tin từ input username
+        var inputPassword = document.getElementById('password'); //lấy thông tin từ input password
+
+        var loginForm = document.getElementById('loginForm');
+        if (loginForm.attacEvent) {
+            loginForm.attacEvent('submit', onFormSubmit);
+        } else {
+            loginForm.addEventListener('submit', onFormSubmit);
+        }
+
+        function onFormSubmit(e) {
+            var username = inputUsername.value;
+            var password = inputPassword.value;
+            console.log(username, password)
+                //Thông Báo INput Chưa Nhập
+            if (username == '' && password == '') {
+                alert('Ban Chua Nhap Username & Password');
+                return;
+            }
+            if (username == '') {
+                alert('Ban Chua Nhap Username');
+                return;
+            } else if (password == '') {
+                alert('Ban Chua Nhap Password');
+                return;
+            }
+            if (username == CORRECT_USER && password == CORRECT_PASS) {
+                alert('Dang Nhap Thanh Cong');
+            } else {
+                alert('Sai Ten Dang Nhap Hoac Mat Khau');
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

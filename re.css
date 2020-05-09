@@ -1,0 +1,74 @@
+body
+{
+    background:url(./img/background_Login4.jpg);
+    background-size: cover;
+}
+a
+{
+    color:yellow;
+    text-decoration: blink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 35px;
+}
+.reset
+{
+    background: rgba(44,62,80,0.7);
+    padding: 40px;
+    height: 400px;
+    margin-left: 180px;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 280px;
+}
+h1
+{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+input[type=password]
+{
+    width:240px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'Play',sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    transition: border 0.5s;
+    text-align: left;    
+    margin-left: 20px;
+}
+
+input[type=button]
+{
+    text-align: center;
+    border:none;
+    background: white;
+    color:#000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 180px;
+    margin-left: 50px;
+}
+input[type=button]:hover
+{
+    color: #fff;
+    background-color: black;
+}
+
+a:hover
+{
+    color:skyblue;
+}
+
+::placeholder{
+    color: aliceblue;
+    opacity: 0.8;
+}
